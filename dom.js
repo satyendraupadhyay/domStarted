@@ -23,11 +23,29 @@ var header = document.getElementById('main-header');
 var items = document.getElementsByClassName('list-group-item');
 console.log(items);
 console.log(items[1]);
-items[2].style.backgroundColor = 'green';
+// items[2].style.backgroundColor = 'green';
 //items.style.all.fontWeight = 'bold';
 
-for (var i  = 0;i < items.length;i++){
-    items[i].style.fontWeight = 'bold';
+// for (var i  = 0;i < items.length;i++){
+//     items[i].style.fontWeight = 'bold';
+// }
+// var lastItem = document.getElementsByTagName('li');
+// // lastItem.style.fontWeight = 'bold';
+// console.log('lastItem');
+
+// var secondItem = document.querySelector('.list-group-item:nth-Child(2)');
+// secondItem.style.backgroundColor = 'green';
+
+// var thirdItem = document.querySelector('.list-group-item:nth-Child(3)');
+// thirdItem.style.color = 'white';
+
+var secItem = document.querySelectorAll('.list-group-item');
+secItem[1].style.color = 'green';
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+
+for (var i = 0;i < odd.length;i++){
+    odd[i].style.backgroundColor = 'green';
 }
-var lastItem = document.getElementsByTagName('li');
-lastItem.style.fontWeight = 'bold';
+
+
